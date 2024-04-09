@@ -1,16 +1,22 @@
-# Description: Dockerfile for the Node.js receiptsfrontendlication
-FROM node:21-slim
+# Use Node.js LTS version as base image
+FROM node:slim
 
-# Setting up the work directory
-WORKDIR /receiptsfrontend
+# Set working directory
+WORKDIR /usr/src/app
 
-# Installing dependencies
-COPY ./package*.json /receiptsfrontend
+# Install dependencies
+COPY package.json ./
 
 RUN npm install
 
-# Copying all the files in our project
-COPY . .
+# Copy the rest of the application code
+COPY . ./
 
-# Starting our receiptsfrontendlication
-CMD ["npm","start"]
+# Build the Next.js application
+RUN npm run build
+
+# Expose port 3000
+EXPOSE 3000
+
+# Run the application
+CMD ["npm", "start"]

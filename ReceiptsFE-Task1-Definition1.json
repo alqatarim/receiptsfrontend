@@ -1,0 +1,117 @@
+{
+ "containerDefinitions": [
+      {
+          "name": "ReceiptsFE-Task1-Container1",
+          "image": "692889134364.dkr.ecr.me-south-1.amazonaws.com/receiptsfrontend-ecr-repo",
+          "cpu": 2048,
+          "memory": 2048,
+          "memoryReservation": 4096,
+          "portMappings": [
+              {
+                  "name": "receiptsfrontendx1-container1-port",
+                  "containerPort": 3000,
+                  "hostPort": 3000,
+                  "protocol": "tcp",
+                  "appProtocol": "http"
+              }
+          ],
+          "essential": true,
+          "environment": [],
+          "mountPoints": [],
+          "volumesFrom": [],
+          "startTimeout": 60,
+          "stopTimeout": 60,
+          "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                  "awslogs-create-group": "true",
+                  "awslogs-group": "/ecs/ReceiptsFE-Task1-Definition1",
+                  "awslogs-region": "me-south-1",
+                  "awslogs-stream-prefix": "ecs"
+              },
+              "secretOptions": []
+          },
+          "systemControls": []
+      },
+      {
+          "name": "aws-otel-collector",
+          "image": "public.ecr.aws/aws-observability/aws-otel-collector:v0.38.1",
+          "cpu": 0,
+          "portMappings": [],
+          "essential": true,
+          "command": [
+              "--config=/etc/ecs/ecs-cloudwatch.yaml"
+          ],
+          "environment": [],
+          "mountPoints": [],
+          "volumesFrom": [],
+          "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                  "awslogs-create-group": "true",
+                  "awslogs-group": "/ecs/ecs-aws-otel-sidecar-collector",
+                  "awslogs-region": "me-south-1",
+                  "awslogs-stream-prefix": "ecs"
+              },
+              "secretOptions": []
+          },
+          "systemControls": []
+      }
+  ],
+  "family": "ReceiptsFE-Task1-Definition1",
+  "taskRoleArn": "arn:aws:iam::692889134364:role/service-role/CodeCatalystDevRole",
+  "executionRoleArn": "arn:aws:iam::692889134364:role/service-role/CodeCatalystDevRole",
+  "networkMode": "awsvpc",
+  "volumes": [],
+  "requiresAttributes": [
+      {
+          "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+      },
+      {
+          "name": "ecs.capability.execution-role-awslogs"
+      },
+      {
+          "name": "com.amazonaws.ecs.capability.ecr-auth"
+      },
+      {
+          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+      },
+      {
+          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
+      },
+      {
+          "name": "com.amazonaws.ecs.capability.task-iam-role"
+      },
+      {
+          "name": "ecs.capability.container-ordering"
+      },
+      {
+          "name": "ecs.capability.execution-role-ecr-pull"
+      },
+      {
+          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+      },
+      {
+          "name": "ecs.capability.task-eni"
+      },
+      {
+          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
+      }
+  ],
+  "placementConstraints": [],
+  "compatibilities": [
+      "EC2",
+      "FARGATE"
+  ],
+  "requiresCompatibilities": [
+      "FARGATE"
+  ],
+  "cpu": "2048",
+  "memory": "4096",
+  "runtimePlatform": {
+      "cpuArchitecture": "X86_64",
+      "operatingSystemFamily": "LINUX"
+  },
+
+  "tags": []
+}
