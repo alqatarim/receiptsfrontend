@@ -5,12 +5,12 @@
           "image": "692889134364.dkr.ecr.me-south-1.amazonaws.com/receiptsfrontend-ecr-repo",
           "cpu": 2048,
           "memory": 4096,
-          "memoryReservation": 4096,
+          "memoryRaeservation": 4096,
           "portMappings": [
               {
                   "name": "receiptsfrontendx1-container1-port",
-                  "containerPort": 3000,
-                  "hostPort": 3000,
+                  "containerPort": 80,
+                  "hostPort": 80,
                   "protocol": "tcp",
                   "appProtocol": "http"
               }

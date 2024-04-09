@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 
+
+const PORT = process.env.PORT || 80
 function DataFetcher() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:80/api/receipts') // Replace '/api/data' with the URL of your backend API endpoint
+    fetch('http://localhost:5001/api/receipts') // Replace '/api/data' with the URL of your backend API endpoint
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
