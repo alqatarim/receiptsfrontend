@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 const PORT = process.env.PORT || 80
 function DataFetcher() {
   const [data, setData] = useState(null);
- const internalLBURL = 'internal-Receipts-Internal-LoadBalancer-1799906326.me-south-1.elb.amazonaws.com/api/receipts'
+ const internalLBURL = 'internal-Receipts-Internal-LoadBalancer-1799906326.me-south-1.elb.amazonaws.com:8081/api/receipts'
  const localhostURL = 'http://localhost:5001/api/receipts'
 
   useEffect(() => {
