@@ -8,7 +8,7 @@
           "memoryReservation": 4096,
           "portMappings": [
               {
-                  "name": "receiptsfrontendx1-container1-port",
+                  "name": "receiptsfrontendx1-container1",
                   "containerPort": 80,
                   "hostPort": 80,
                   "protocol": "tcp",
