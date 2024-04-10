@@ -3,11 +3,12 @@ import { useEffect, useState } from 'react';
 
 // const PORT = process.env.PORT || 8081
 const PORT = 8081
+
 function DataFetcher() {
   const [data, setData] = useState(null);
 
 var Host = 'ReceiptsLoadBalancer-1009143669.me-south-1.elb.amazonaws.com'
-  // HOST = 'localhost' // #5001   /api/receipts
+// var HOST = 'localhost' // #5001   /api/receipts
 
   useEffect(() => {
     fetch(`http://${Host}:${PORT}/api/receipts`) // Replace '/api/data' with the URL of your backend API endpoint

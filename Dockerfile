@@ -5,18 +5,23 @@ FROM node:slim
 WORKDIR /usr/src/app
 
 # Install dependencies
-COPY package.json ./
+COPY package*.json ./
 
-RUN npm install
+# for dev: RUN npm install
 
+# for production:
+RUN npm ci --only=production
 # Copy the rest of the application code
 COPY . ./
 
 # Build the Next.js application
+# dev: RUN npm run build
+
+#production:
 RUN npm run build
 
-# Expose port 3000
-EXPOSE 80:80
+# Expose port 3000 for dev or 80 for prod
+EXPOSE 80
 
 # Run the application
 CMD ["npm", "start"]
