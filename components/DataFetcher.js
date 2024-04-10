@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react';
 const PORT = process.env.PORT || 80
 function DataFetcher() {
   const [data, setData] = useState(null);
- const internalLBURL = 'http://receiptsloadbalancer-1009143669.me-south-1.elb.amazonaws.com/api/receipts'
+ const internalLBURL = 'http://receiptsloadbalancer-1009143669.me-south-1.elb.amazonaws.com:8081/api/receipts'
  const localhostURL = 'http://localhost:5001/api/receipts'
 
   useEffect(() => {
-    fetch(nternalLBURL) // Replace '/api/data' with the URL of your backend API endpoint
+    fetch(internalLBURL) // Replace '/api/data' with the URL of your backend API endpoint
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
