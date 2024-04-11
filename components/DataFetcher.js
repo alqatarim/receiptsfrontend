@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 
 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8081;
  var HOST = process.env.HOST || `ReceiptsLoadBalancer-1009143669.me-south-1.elb.amazonaws.com`
 
 function DataFetcher() {
