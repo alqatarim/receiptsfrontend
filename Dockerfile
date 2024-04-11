@@ -15,13 +15,12 @@ RUN npm ci --only=production
 COPY . ./
 
 # Build the Next.js application
-# dev: RUN npm run build
 
 #production:
 RUN npm run build
 
 # Expose port 3000 for dev or 80 for prod
-EXPOSE 80
+EXPOSE 3000
 
-# Run the application
+# Run the application jj
 CMD ["npm", "start"]
