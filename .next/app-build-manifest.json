@@ -1,0 +1,22 @@
+{
+  "pages": {
+    "/[lang]/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/layout.css",
+      "static/chunks/app/[lang]/layout.js"
+    ],
+    "/[lang]/(dashboard)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/(dashboard)/layout.css",
+      "static/chunks/app/[lang]/(dashboard)/layout.js"
+    ],
+    "/[lang]/(dashboard)/apps/invoice/add/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/(dashboard)/apps/invoice/add/[id]/page.css",
+      "static/chunks/app/[lang]/(dashboard)/apps/invoice/add/[id]/page.js"
+    ]
+  }
+}

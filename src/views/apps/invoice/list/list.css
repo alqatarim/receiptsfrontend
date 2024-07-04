@@ -1,0 +1,9 @@
+.icon-hover-rotate {
+    transition: transform 0.3s ease-in-out !important;
+
+    /* background-color: red; */
+  }
+  
+  .icon-hover-rotate:hover {
+    transform: rotate(180deg) !important;
+  }

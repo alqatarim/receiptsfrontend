@@ -1,0 +1,54 @@
+{
+  "node": {
+    "40bc49d9c72babcc255115e63394b1dda6149892": {
+      "workers": {
+        "app/[lang]/(dashboard)/apps/invoice/add/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmohammedalqatari%2Freceiptsfrontend%2Fsrc%2F%40core%2Futils%2FserverHelpers.js%22%2C%5B%22getMode%22%2C%22getSettingsFromCookie%22%2C%22getServerMode%22%2C%22getDemoName%22%2C%22getSkin%22%2C%22getSystemMode%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/[lang]/(dashboard)/apps/invoice/add/[id]/page": "rsc"
+      }
+    },
+    "478059fef3f6c032d1f2efbda6b001a16f136eb1": {
+      "workers": {
+        "app/[lang]/(dashboard)/apps/invoice/add/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmohammedalqatari%2Freceiptsfrontend%2Fsrc%2F%40core%2Futils%2FserverHelpers.js%22%2C%5B%22getMode%22%2C%22getSettingsFromCookie%22%2C%22getServerMode%22%2C%22getDemoName%22%2C%22getSkin%22%2C%22getSystemMode%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/[lang]/(dashboard)/apps/invoice/add/[id]/page": "rsc"
+      }
+    },
+    "b7e5ee4d3d3ce501dda7880d85ceaca9077f0a5f": {
+      "workers": {
+        "app/[lang]/(dashboard)/apps/invoice/add/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmohammedalqatari%2Freceiptsfrontend%2Fsrc%2F%40core%2Futils%2FserverHelpers.js%22%2C%5B%22getMode%22%2C%22getSettingsFromCookie%22%2C%22getServerMode%22%2C%22getDemoName%22%2C%22getSkin%22%2C%22getSystemMode%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/[lang]/(dashboard)/apps/invoice/add/[id]/page": "rsc"
+      }
+    },
+    "dddeabfdfdd165dd208b4180a3a0735249db1e5d": {
+      "workers": {
+        "app/[lang]/(dashboard)/apps/invoice/add/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmohammedalqatari%2Freceiptsfrontend%2Fsrc%2F%40core%2Futils%2FserverHelpers.js%22%2C%5B%22getMode%22%2C%22getSettingsFromCookie%22%2C%22getServerMode%22%2C%22getDemoName%22%2C%22getSkin%22%2C%22getSystemMode%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/[lang]/(dashboard)/apps/invoice/add/[id]/page": "rsc"
+      }
+    },
+    "f7221fd5565fad88011bb350ec9f196dcb4837e2": {
+      "workers": {
+        "app/[lang]/(dashboard)/apps/invoice/add/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmohammedalqatari%2Freceiptsfrontend%2Fsrc%2F%40core%2Futils%2FserverHelpers.js%22%2C%5B%22getMode%22%2C%22getSettingsFromCookie%22%2C%22getServerMode%22%2C%22getDemoName%22%2C%22getSkin%22%2C%22getSystemMode%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/[lang]/(dashboard)/apps/invoice/add/[id]/page": "rsc"
+      }
+    },
+    "fdbf35b5be2d1c92693f9efafd9b851f55b76d3a": {
+      "workers": {
+        "app/[lang]/(dashboard)/apps/invoice/add/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmohammedalqatari%2Freceiptsfrontend%2Fsrc%2F%40core%2Futils%2FserverHelpers.js%22%2C%5B%22getMode%22%2C%22getSettingsFromCookie%22%2C%22getServerMode%22%2C%22getDemoName%22%2C%22getSkin%22%2C%22getSystemMode%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/[lang]/(dashboard)/apps/invoice/add/[id]/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "XE9mylGFJaC1CUPYKnOpkBm9dSabNzfdf8vSNITSces="
+}

@@ -1,0 +1,17 @@
+# pack-refs with: peeled fully-peeled sorted 
+6c23b89727a13918e0da8972959d2529dc305b5b refs/heads/aws-workflow-Branch
+f29e2d39a8a81a5931fd3a688cdebbbdf28fa603 refs/heads/main
+4debef66e26b9882d400c3b645986e654c69ab28 refs/pull/1/head
+90bfdbdfec37da27820a926a70149ac83c516278 refs/pull/10/head
+e631edd9042c2166385139bd6269023d6ef90349 refs/pull/11/head
+c2da06a0afc4341abd4d0a54ed7ca754b0ab644f refs/pull/12/head
+66ad4b62d9bf175bb42a725203636082623a82a6 refs/pull/13/head
+f29e2d39a8a81a5931fd3a688cdebbbdf28fa603 refs/pull/14/head
+ced24fcb479dc876c6ab5bf1ad9603dcd8605d86 refs/pull/2/head
+1394bd64cd010d88866a436db7f890b43cbfaad4 refs/pull/3/head
+7961d799240e6550987aff51ccf6f8c9cbaae018 refs/pull/4/head
+b1e3a2ddf167277434c0aa893348b9d1e285e58e refs/pull/5/head
+90ee21fe470ae3d5f5cff6763561e1c2e90cf0e8 refs/pull/6/head
+5a9a55c59a22c55da013d86b2e886dced29fac5f refs/pull/7/head
+99c34c4567808b20ee0a37fbb873da1e08c1b7b2 refs/pull/8/head
+a94602a53220e33ddc2e23b8d7c613b65dfbc59b refs/pull/9/head
